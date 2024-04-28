@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@inject LanguageService language
+
+<div class="container text-center mt-5 mb-5 fs-3 fw-bold">
+    <p>@language.Getkey("title")</p>
+</div>
+<div class="container text-center mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-3">
+            <p>
+                @language.Getkey("subtitle") <br />
+                @language.Getkey("subtitle_city")
+            </p>
+        </div>
+    </div>
+</div>

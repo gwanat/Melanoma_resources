@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+@inject LanguageService language
+<body>
+    <div class="text-center">
+        <p>@language.Getkey("about_content")</p>
+    </div>
+</body>
